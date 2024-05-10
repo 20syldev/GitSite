@@ -24,82 +24,17 @@
     overflow: hidden;
   }
 
-  /* Titre en haut à gauche de la page */
-  #top .textTop {
+  /* Titre en haut de la page */
+  #top .title {
     user-select: none;
-    position: absolute;
-    color: #ffffff;
-    font-family: 'Raleway-SemiBold';
-    font-size: 1.55vw;
-  }
-  #top .textTop a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  /* Lien en haut à droite de la page */
-  #top .topMenus {
-    user-select: none;
-    position: absolute;
-    right: 3%;
-    color: #ffffff;
-    font-family: 'Raleway-Regular';
-    font-size: 1.2vw;
-  }
-  #top .topMenus a {
-    margin-left: 4vw;
-    text-decoration: none;
-    color: #888888;
-  }
-  #top .topMenus a:hover {
-    text-decoration: underline;
-    color: #aaaaaa;
-  }
-
-  /* Barre sous le titre en haut à gauche de la page */
-  #top .textBar {
     position: relative;
-    width: 0;
-    opacity: 0;
-    margin-left: 0;
-    top: 5vh;
-    border: 0.3vh solid #5679d1;
-    border-radius: 100px;
-    transition: 3s;
-    transition-delay: 2s;
-  }
-  #top:hover .textBar {
-    width: 13.8vw;
-    opacity: 1;
-    transition: 0.5s;
-  }
-
-  /* Titre du texte de la page */
-  #header .title {
+    color: #ffffff;
     font-family: 'Raleway-SemiBold';
     font-size: 3vw;
-    margin-top: 30vh;
   }
-
-  /* Texte de la page */
-  #header .textSub {
-    color: #9f9f9f;
-    font-family: 'Raleway-Regular';
-    font-size: 1.4vw;
-    margin-top: 4vh;
-  }
-  #header .textSub a {
+  #top .title a {
     text-decoration: none;
-  }
-  #header .textSub a:hover {
-    color: #aaaaaa;
-    text-decoration: underline;
-  }
-  #header .textSub span {
-    margin-top: 0.7em;
-    margin-left: 0;
-    max-width: 50vw;
-    line-height: 3.2vh;
+    color: #ffffff;
   }
 
   /* Texte du bas de la page */
@@ -117,160 +52,6 @@
   #bottom a:hover {
     color: #777777;
     text-decoration: underline;
-  }
-
-  /* Encadré d'information de profil */
-  #image button {
-    user-select: none;
-    background: #1b1e27;
-    color: #ffffff;
-    border: none;
-    border-radius: 1.8vw;
-    box-sizing: border-box;
-    position: fixed;
-    text-align: left;
-    font-size: 1.75vw;
-    width: 39vw;
-    height: 72vh;
-    top: 0;
-    right: 3%;
-    margin-top: 16vh;
-    transition: 0.5s;
-  }
-  #image pre {
-    margin-left: -8vw;
-  }
-
-  /* Bouton "Mes projets" */
-  #btnProj {
-    user-select: none;
-    background: #5679d1;
-    color: #ffffff;
-    border: none;
-    border-radius: 100px;
-    box-sizing: border-box;
-    font-family: 'Raleway-SemiBold';
-    font-size: 1vw;
-    padding: 2vh;
-    width: 8.5vw;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    margin-top: 4vh;
-    margin-bottom: 33.55vh;
-    padding-left: 1.5vw;
-    transition: 0.5s;
-  }
-
-  /* Animation du bouton */
-  #btnProj:before {
-    content: "";
-    background: linear-gradient(
-      45deg,
-      #629cf4,
-      #2c67f2,
-      #2c7bf2
-    );
-    position: absolute;
-    background-size: 400%;
-    border-radius: 100px;
-    top: -2px;
-    left: -2px;
-    z-index: -1;
-    opacity: 0;
-    animation: btnProj 20s linear infinite;
-    transition: opacity 0.3s ease-in-out;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-  }
-  #btnProj:hover:before {
-    opacity: 1;
-  }
-
-  /* Animation */
-  @keyframes btnProj {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-
-  /* Styles des images */
-  #btnProj .file {
-    width: 1vw;
-    height: auto;
-    filter: invert(100%);
-    margin-left: 0.5vw;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  #btnProj .star1 {
-    width: 1vw;
-    height: auto;
-    filter: invert(100%);
-    margin-top: -1.5vw;
-    margin-left: -1vw;
-    opacity: 0;
-    transition: 0.2s;
-  }
-  #btnProj .star2 {
-    width: 1.2vw;
-    height: auto;
-    filter: invert(100%);
-    margin-top: 1.5vw;
-    margin-left: 0;
-    position: absolute;
-    opacity: 0;
-    transition: 0.2s;
-  }
-
-  #btnProj span {
-    white-space: nowrap;
-  }
-
-  /* Animations des images */
-  #btnProj:hover {
-    padding-left: 2vw;
-    width: 10.7vw;
-    transition: 0.5s;
-  }
-  #btnProj:hover .file {
-    opacity: 1;
-    transition: 0.5s;
-  }
-  #btnProj:hover .star1 {
-    rotate: 70deg;
-    margin-top: -1.3vw;
-    margin-left: 0;
-    opacity: 1;
-    transition: 1.5s;
-  }
-  #btnProj:hover .star2 {
-    rotate: -110deg;
-    margin-top: 1.5vw;
-    margin-left: -1.5vw;
-    opacity: 1;
-    transition: 1.5s;
-  }
-
-  /* Fixer le style des liens */
-  #nolink {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  /* Texte informatif */
-  #info {
-    color: #333333;
-    position: absolute;
-    visibility: hidden;
-    font-size: 0.8em;
   }
 
   /* Barre de scroll */
@@ -319,7 +100,7 @@
     overflow: hidden;
   }
 
-  /* Titre en haut à gauche de la page */
+  /* Titre en haut de la page */
   #top .textTop {
     user-select: none;
     position: relative;
@@ -331,57 +112,6 @@
   #top .textTop a {
     text-decoration: none;
     color: #ffffff;
-  }
-
-  /* Lien en haut à droite de la page */
-  #top .topMenus {
-    user-select: none;
-    position: absolute;
-    color: #ffffff;
-    font-family: 'Raleway-Regular';
-    font-size: 1.4vh;
-    margin-top: 2vw;
-    left: 5%;
-    right: 5%;
-    max-width: fit-content;
-  }
-  .topMenus a {
-    margin-left: 6vw;
-    text-decoration: none;
-    color: #888888;
-  }
-
-  /* Barre sous le titre en haut à gauche de la page */
-  #top .textBar {
-    display: none;
-  }
-
-  /* Titre du texte de la page */
-  #header .title {
-    position: relative;
-    font-family: 'Raleway-SemiBold';
-    font-size: 3vh;
-    text-align: center;
-    margin-top: 10vh;
-    line-height: 2vh;
-  }
-
-  /* Texte de la page */
-  #header .textSub {
-    color: #9f9f9f;
-    font-family: 'Raleway-Regular';
-    text-align: center;
-    font-size: 2.5vw;
-    margin-top: 2vh;
-  }
-  #header .textSub span {
-    margin-top: 2vh;
-    font-size: 2.7vw;
-    left: 2%;
-    right: 2%;
-    max-width: fit-content;
-    line-height: 1.6vh;
-    text-align: center;
   }
 
   /* Texte du bas de la page */
@@ -400,73 +130,6 @@
   #bottom a:hover {
     color: #777777;
     text-decoration: underline;
-  }
-
-  /* Encadré d'information de profil */
-  #image button {
-    user-select: none;
-    position: relative;
-    background: #1b1e27;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    box-sizing: border-box;
-    position: absolute;
-    text-align: left;
-    font-size: 1.80vh;
-    width: 90%;
-    height: fit-content;
-    left: 5%;
-    right: 5%;
-    top: auto;
-    margin-top: 7vh;
-    transition: 0.5s;
-  }
-  #image pre {
-    margin-left: -18vw;
-  }
-
-  /* Bouton "Mes projets" */
-  #btnProj {
-    user-select: none;
-    position: relative;
-    background: #5679d1;
-    color: #ffffff;
-    border: none;
-    border-radius: 100px;
-    font-family: 'Raleway-SemiBold';
-    font-size: 25px;
-    padding: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 200px;
-    height: 60px;
-    margin-top: 2vh;
-    left: 40%;
-    transition: 0.5s;
-    max-width: fit-content;
-  }
-
-  /* Styles des images */
-  .file {
-    display: none;
-  }
-  .star1 {
-    display: none;
-  }
-  .star2 {
-    display: none;
-  }
-
-  /* Fixer le style des liens */
-  #nolink {
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  /* Texte informatif */
-  #info {
-    display: none;
   }
 
   /* Barre de scroll */
