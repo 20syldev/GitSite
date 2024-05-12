@@ -101,7 +101,7 @@
   }
 
   /* Titre en haut de la page */
-  #top .textTop {
+  #top .title {
     user-select: none;
     position: relative;
     color: #ffffff;
@@ -109,7 +109,7 @@
     font-size: 1.8vh;
     text-align: center;
   }
-  #top .textTop a {
+  #top .title a {
     text-decoration: none;
     color: #ffffff;
   }
