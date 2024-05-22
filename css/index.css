@@ -93,7 +93,6 @@
 
   /* Milieu de la page */
   #middle {
-    user-select: none;
     color: #ffffff;
     font-family: 'Raleway-SemiBold';
     font-size: 3vw;
