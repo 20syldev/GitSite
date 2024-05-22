@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Animation du bouton sponsor
     const sponsorImage = document.getElementById('sponsor');
 
     sponsorImage.addEventListener('mouseover', function() {
