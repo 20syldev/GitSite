@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylvain L. - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liens vers le CSS, le JS et l'icône -->
+    <link rel="stylesheet" type="text/css" href="https://sylvain.pro/css/index.css"/>
+    <link rel="icon" href="https://sylvain.pro/images/portfolio.png"/>
+    <script src="https://sylvain.pro/js/index.js"></script>
+  </head>
+  <body>
+    
+    <!-- Titre en haut de page, liens vers les pages -->
+    <div id="top">
+      <div class="textTop"><a href="https://sylvain.pro">SYLVAIN LAMBERT</a></div>
+      <span class="topMenus">
+        <a href="https://sylvain.pro/projets">Projets</a>
+        <a href="https://sylvain.pro/about">À propos</a>
+        <a href="https://sylvain.pro/contact">Contact</a>
+        <a href="https://github.com/20syldev" target="_blank">Github</a>
+        <a href="https://linkedin.com/in/sylvainlmb" target="_blank">LinkedIn</a>
+      </span>
+      <hr class="textBar">
+    </div>
+    
+    <!-- Texte de la page -->
+    <div id="header">
+      <div class="title">Bonjour, je suis <span onmouseover="big(event)" onmouseout="normal(event)">Sylvain</span>.</div>
+        <div class="textSub">
+          Développeur et Web Designer amateur.
+          J'<span onmouseover="showSubTxt(1)" onmouseout="normalSubTxt(1)" id="txtChange1">imagine</span>, 
+          je <span onmouseover="showSubTxt(2)" onmouseout="normalSubTxt(2)" id="txtChange2">créé</span>, 
+          je <span onmouseover="showSubTxt(3)" onmouseout="normalSubTxt(3)" id="txtChange3">publie</span>.
+          <br>
+          <i id="info">Essayez d'interagir avec les mots ci-dessus pour en savoir plus sur moi !</i>
+          <span id="headerTxt1" style="opacity: 0; position: absolute;">Je commence par conceptualiser le site sur Canva, simplement l'interface de la page principale, puis je passe sur Visual Studio Code.</span>
+          <span id="headerTxt2" style="opacity: 0; position: absolute;">J'utilise HTML, CSS et Js seulement car je ne fais que des pages statiques pour l'instant. J'utilise <i>un peu</i> PHP mais je ne suis pas le meilleur...</span>
+          <span id="headerTxt3" style="opacity: 0; position: absolute;">Depuis 2023, j'utilise Github Pages pour héberger mes sites rapidement, puis je redirige la page vers mon domaine !</span>
+        </div>
+    </div>
+
+    <!-- Encadré de profil à droite -->
+    <div id="image">
+      <button id="codeBtn" tabindex="-1">
+        <pre>
+          <span style="color: #5d823f">/* Présentation */</span>
+          <span style="color: #b9ab69">#profil</span> <span style="color: #ffd700">{</span>
+            <span style="color: #7cc8e1">description</span>: <span style="color: #99634a">"Dev", "Designer"</span>;
+            <span style="color: #7cc8e1">rigueur</span>: <span style="color: #85a678">100%</span>;
+          <span style="color: #ffd700">}</span>
+
+          <span style="color: #b9ab69">#formations</span> <span style="color: #ffd700">{</span>
+            <span style="color: #7cc8e1">école</span>: <span style="color: #99634a">"Lycée Jean Monnet"</span>;
+            <span style="color: #7cc8e1">année</span>: <span style="color: #85a678"><span id="pourcentage"></span></span>;
+          <span style="color: #ffd700">}</span>
+
+          <span style="color: #b9ab69">#contact</span> <span style="color: #ffd700">{</span>
+            <span style="color: #7cc8e1">mail</span>: <span style="color: #99634a">"contact@sylvain.pro"</span>;
+            <span style="color: #7cc8e1">discord</span>: <span style="color: #99634a">"@20syl_"</span>;
+          <span style="color: #ffd700">}</span>
+        </pre>
+      </button>
+    </div>
+
+    <!-- Bouton "Mes projets" sous le texte -->
+    <button id="btnProj" tabindex="-1">
+        <span><a id="nolink" href="https://sylvain.pro/projets">Mes projets</a></span>
+        <img src="https://sylvain.pro/images/file.png" class="file">
+        <img src="https://sylvain.pro/images/shine.png" class="star1">
+        <img src="https://sylvain.pro/images/shine.png" class="star2">
+    </button>
+
+    <!-- Texte en bas de page -->
+    <div id="bottom">
+      <div class="titleBottom">
+        <a href="https://sylvain.pro">sylvain.pro</a> © 2024. Tous droits réservés.
+      </div>
+    </div>
+  </body>
+</html>
