@@ -111,11 +111,13 @@
     margin: -20px -20px 20px -20px;
     padding: 20px 10px 0px 10px;
   }
+  /* Couleur et bord de l'offre recommandée */
   #middle .offer.best {
     background-color: #ffffff;
     border: 2px solid #57a2f2;
   }
 
+  /* Badge "recommandé" */
   #middle .badge {
     user-select: none;
     position: absolute;
@@ -130,12 +132,14 @@
     border: 1px solid #57a2f2;
   }
 
+  /* Séparateur de lignes */
   #middle .separator {
     height: 1px;
     background: #dddddd;
     margin: 20px 0;
   }
 
+  /* Styles des prix */
   #middle .price {
     font-size: 24px;
     margin: 20px 0;
@@ -150,6 +154,7 @@
     font-size: 12px;
   }
 
+  /* Lignes de séparations */
   #middle ul {
     list-style: none;
     padding: 0;
@@ -169,7 +174,14 @@
     margin-left: auto;
     padding-left: 10px;
   }
+  #middle ul li .cross {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    padding-left: 10px;
+  }
 
+  /* Boutons de confirmation */
   #middle button {
     user-select: none;
     color: #ffffff;
