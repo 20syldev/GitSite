@@ -17,8 +17,8 @@
   }
 
   body {
-    background-color: #111214 !important;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Raleway-SemiBold';
     margin-left: 2%;
     overflow: hidden;
@@ -41,28 +41,26 @@
 
   /* Texte en bas de la page + lien */
   #bottom {
-    color: #555555;
+    color: #000000;
     font-size: 1vw;
-    margin-top: 28.5vh; 
-    margin-left: 39vw;
-    bottom: 2vh;
+    text-align: center;
+    margin-top: 27.9vh;
   }
   #bottom a {
-    color: #555555;
+    color: #000000;
     text-decoration: none;
   }
   #bottom a:hover {
-    color: #777777;
     text-decoration: underline;
   }
 
   /* Lien de la page & Animation */
   #link {
-    color: #9db4ff;
+    color: #ff4444;
     text-decoration: none transparent;
   }
   #link:hover {
-    color: #6e8ffc;
+    color: #ce3131;
     text-decoration: underline;
     transition: text-decoration 1s ease;
   }
@@ -87,8 +85,8 @@
   }
   
   body {
-    background-color: #111214 !important;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Raleway-SemiBold';
     overflow: hidden;
     margin-left: 1%;
@@ -113,28 +111,19 @@
   /* Texte en bas de la page + lien */
   #bottom {
     position: absolute;
-    color: #555555;
+    color: #000000;
     font-size: 3vw;
     margin-left: 22vw;
     bottom: 2vh;
   }
   #bottom a {
-    color: #555555;
+    color: #000000;
     text-decoration: none;
-  }
-  #bottom a:hover {
-    color: #777777;
-    text-decoration: underline;
   }
 
   /* Lien de la page & Animation */
   #link {
-    color: #9db4ff;
+    color: #ff4444;
     text-decoration: none transparent;
-  }
-  #link:hover {
-    color: #6e8ffc;
-    text-decoration: underline;
-    transition: text-decoration 1s ease;
   }
 }
