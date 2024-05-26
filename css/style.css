@@ -2,11 +2,6 @@
 @media only screen and (min-width: 1080px) {
   /* Importer les polices */
   @font-face {
-    font-family: 'Raleway-Bold';
-    src: url('./Raleway-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
     font-family: 'Raleway-Regular';
     src: url('./Raleway-Regular.ttf') format('truetype');
   }
@@ -24,19 +19,19 @@
   }
 
   body {
-    background-color: #111214 !important;
-    color: #ffffff;
+    font-family: 'Raleway-SemiBold';
+    background-color: #ffffff;
+    color: #000000;
+    overflow: hidden;
     margin-left: 2%;
     margin-top: 3%;
-    overflow: hidden;
   }
 
   /* Haut de la page */
   #top .title {
     user-select: none;
     position: relative;
-    color: #ffffff;
-    font-family: 'Raleway-SemiBold';
+    color: #000000;
     font-size: 2vw;
   }
   #top .title img {
@@ -51,7 +46,7 @@
   }
   #top .title a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
   }
   #top .title a:hover {
     text-decoration: underline;
@@ -81,7 +76,7 @@
     width: 1.5vw;
     height: auto;
     margin-left: 2vw;
-    filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(284deg) brightness(100%) contrast(87%);
+    filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(260deg) brightness(100%) contrast(100%);
     transition: opacity 0.5s ease;
   }
   #top .links #sponsor.hover {
@@ -93,27 +88,116 @@
 
   /* Milieu de la page */
   #middle {
-    color: #ffffff;
-    font-family: 'Raleway-SemiBold';
-    font-size: 3vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 6vh;
+    gap: 40px;
+  }
+
+  #middle .offer {
+    position: relative;
+    background-color: #ededed;
     text-align: center;
-    margin-top: 15vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    border: 2px solid #ebebeb;
+  }
+  #middle .offer h2 {
+    margin: -20px -20px 20px -20px;
+    padding: 20px 10px 0px 10px;
+  }
+  #middle .offer.best {
+    background-color: #ffffff;
+    border: 2px solid #57a2f2;
+  }
+
+  #middle .badge {
+    user-select: none;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background: #57a2f2;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid #57a2f2;
+  }
+
+  #middle .separator {
+    height: 1px;
+    background: #dddddd;
+    margin: 20px 0;
+  }
+
+  #middle .price {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  #middle .price span {
+    font-size: 14px;
+  }
+  #middle .price small {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  #middle ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  #middle ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+  }
+  #middle ul li:last-child {
+    border-bottom: none;
+  }
+
+  #middle button {
+    user-select: none;
+    color: #ffffff;
+    background: #57a2f2;
+    font-family: 'Raleway-SemiBold';
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    margin: 20px 0 0;
+  }
+  #middle button:hover {
+    background: #5582e2;
+    box-shadow: 0 0 30px #5582e2cc;
+  }
+
+  #middle .offer.best button {
+    box-shadow: 0 0 30px #57a2f2cc;
+  }
+  #middle .offer.best button:hover {
+    background: #e96e6ecc;
+    box-shadow: 0 0 30px #e96e6ecc;
+    transform: scale(1.1);
   }
 
   /* Bas de la page */
   #bottom {
-    color: #555555;
-    font-family: 'Raleway-SemiBold';
+    color: #000000;
     font-size: 1vw;
-    margin-top: 45vh;
-    margin-left: 39vw;
+    text-align: center;
+    margin-top: 13vh;
   }
   #bottom a {
-    color: #555555;
+    color: #000000;
     text-decoration: none;
   }
   #bottom a:hover {
-    color: #777777;
     text-decoration: underline;
   }
 
@@ -121,7 +205,7 @@
   ::-webkit-scrollbar {
     height: 1vh;
     width: 0.5vw;
-    background-color: #111214;
+    background-color: #ffffff;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
@@ -129,23 +213,18 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #353739;
+    background-color: #000000;
     border-radius: 10vw;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #474d54;
+    background-color: #222222;
   }
 }
 
 /* CSS Mobile (Index) */
 @media only screen and (max-width: 1080px) {
   /* Importer les polices */
-  @font-face {
-    font-family: 'Raleway-Bold';
-    src: url('./Raleway-Bold.ttf') format('truetype');
-  }
-  
   @font-face {
     font-family: 'Raleway-Regular';
     src: url('./Raleway-Regular.ttf') format('truetype');
@@ -164,18 +243,17 @@
   }
   
   body {
-    background-color: #111214 !important;
-    color: #ffffff;
-    margin-top: 5%;
+    font-family: 'Raleway-SemiBold';
+    background-color: #ffffff;
+    color: #000000;
     overflow: hidden;
+    margin-top: 5%;
   }
-
   /* Haut de la page */
   #top .title {
     user-select: none;
     position: relative;
     color: #ffffff;
-    font-family: 'Raleway-SemiBold';
     font-size: 1.8vh;
     text-align: center;
     margin-left: 2%;
@@ -229,7 +307,6 @@
   #middle {
     user-select: none;
     color: #ffffff;
-    font-family: 'Raleway-SemiBold';
     font-size: 3vh;
     text-align: center;
     margin-top: 30vh;
@@ -239,7 +316,6 @@
   #bottom {
     position: absolute;
     color: #555555;
-    font-family: 'Raleway-SemiBold';
     font-size: 3vw;
     margin-left: 22vw;
     bottom: 2vh;
@@ -257,7 +333,7 @@
   ::-webkit-scrollbar {
     height: 1vh;
     width: 0.5vw;
-    background-color: #111214;
+    background-color: #ffffff;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
