@@ -88,11 +88,13 @@
 
   /* Milieu de la page */
   #middle {
+    position: absolute;
     display: flex;
     align-items: end;
-    justify-content: center;
-    margin-top: -5vh;
     gap: 40px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* Offres disponibles */
@@ -195,6 +197,7 @@
   #middle button:disabled {
     background: #95b2f088;
     box-shadow: none;
+    cursor: not-allowed;
   }
 
   /*
