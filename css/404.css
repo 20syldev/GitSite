@@ -39,21 +39,6 @@
     text-align: center;
   }
 
-  /* Texte en bas de la page + lien */
-  #bottom {
-    color: #000000;
-    font-size: 1vw;
-    text-align: center;
-    margin-top: 28vh;
-  }
-  #bottom a {
-    color: #000000;
-    text-decoration: none;
-  }
-  #bottom a:hover {
-    text-decoration: underline;
-  }
-
   /* Lien de la page & Animation */
   #link {
     color: #ff4444;
@@ -107,20 +92,7 @@
     font-size: 8vw;
     text-align: center;
   }
-
-  /* Texte en bas de la page + lien */
-  #bottom {
-    position: absolute;
-    color: #000000;
-    font-size: 3vw;
-    margin-left: 22vw;
-    bottom: 2vh;
-  }
-  #bottom a {
-    color: #000000;
-    text-decoration: none;
-  }
-
+  
   /* Lien de la page & Animation */
   #link {
     color: #ff4444;
