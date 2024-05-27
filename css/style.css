@@ -168,13 +168,7 @@
   #middle ul li:last-child {
     border-bottom: none;
   }
-  #middle ul li .checkmark {
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    padding-left: 10px;
-  }
-  #middle ul li .cross {
+  #middle ul li .mark {
     width: 16px;
     height: 16px;
     margin-left: auto;
