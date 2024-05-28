@@ -92,7 +92,7 @@
     display: flex;
     align-items: end;
     gap: 40px;
-    bottom: 100px;
+    bottom: 2.5vw;
     left: 50%;
     transform: translateX(-50%);
   }
