@@ -92,9 +92,9 @@
     display: flex;
     align-items: end;
     gap: 40px;
-    bottom: 2.5vw;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
 
   /* Offres disponibles */
@@ -107,16 +107,25 @@
     padding: 30px;
     width: 23vw;
     border: 2px solid #ebebeb;
+    transition: 1s;
   }
+  #middle .offer:hover {
+    box-shadow: 0 0 20px #cccccc;
+  }
+
   /* Titre des offres */
   #middle .offer h2 {
     margin: -20px -20px 20px -20px;
     padding: 20px 10px 0px 10px;
   }
+
   /* Couleur et bord de l'offre recommandée */
   #middle .offer.best {
     background-color: #ffffff;
     border: 0.5vh solid #57a2f2;
+  }
+  #middle .offer.best:hover {
+    box-shadow: 0 0 20px #57a2f2cc;
   }
 
   /* Badge "recommandé" */
