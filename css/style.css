@@ -94,7 +94,7 @@
     position: absolute;
     display: flex;
     align-items: end;
-    gap: 40px;
+    gap: 3vw;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
