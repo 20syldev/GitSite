@@ -193,23 +193,35 @@
   #middle button {
     user-select: none;
     color: #ffffff;
-    background: #57a2f2;
+    background: linear-gradient(170deg,#5587f3, #5990ef, #6883f1);
     font-family: 'Raleway-SemiBold';
     cursor: pointer;
-    border: none;
+    border: 2px solid #3772d700;
     border-radius: 5px;
     padding: 10px 20px;
-    transition: 0.3s;
     margin: 20px 0 0;
+    transition: 0.3s;
   }
   #middle button:hover {
-    background: #5582e2;
-    box-shadow: 0 0 30px #5582e2cc;
+    background: #595bef;
+    border: 2px solid #494cd9;
+    box-shadow: 0 0 20px #5e48dccc;
+    color: #ffffff;
+    transition: 0.3s;
   }
+  #middle button:active {
+    transform: scale(0.9);
+  }
+
+  /* Bouton désativé */
   #middle button:disabled {
-    background: #95b2f088;
+    background: linear-gradient(to right,#ff80bb66,#c680ff66);
     box-shadow: none;
+    border: none;
     cursor: not-allowed;
+  }
+  #middle button:active:disabled {
+    transform: none;
   }
 
   /*
