@@ -33,6 +33,7 @@
     position: relative;
     color: #000000;
     font-size: 2vw;
+    z-index: 9999;
   }
   #top .title img {
     width: 1.5vw;
@@ -58,6 +59,7 @@
     position: absolute;
     margin-left: 1vw;
     right: 2%;
+    z-index: 9999;
   }
   #top .links .icons {
     width: 1.5vw;
@@ -78,6 +80,7 @@
     margin-left: 2vw;
     filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(260deg) brightness(100%) contrast(100%);
     transition: opacity 0.5s ease;
+    z-index: 9999;
   }
   #top .links #sponsor.hover {
     opacity: 0;
