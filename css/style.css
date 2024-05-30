@@ -104,16 +104,22 @@
   #middle .offer {
     position: relative;
     background-color: #ededed;
+    box-shadow: 0 0 20px #cccccc;
     text-align: center;
+    border: 2px solid #ebebeb;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
     width: 23vw;
-    border: 2px solid #ebebeb;
     transition: 1s;
   }
-  #middle .offer:hover {
-    box-shadow: 0 0 20px #cccccc;
+
+  /* Offre Advanced */
+  #middle .offer.advanced {
+    background-color: #ffffff;
+    border: 0.5vh solid #57a2f2;
+  }
+  #middle .offer.advanced:hover {
+    box-shadow: 0 0 20px #57a2f2cc;
   }
 
   /* Titre des offres */
@@ -122,35 +128,19 @@
     padding: 20px 10px 0px 10px;
   }
 
-  /* Couleur et bord de l'offre recommandée */
-  #middle .offer.best {
-    background-color: #ffffff;
-    border: 0.5vh solid #57a2f2;
-  }
-  #middle .offer.best:hover {
-    box-shadow: 0 0 20px #57a2f2cc;
-  }
-
   /* Badge "recommandé" */
   #middle .badge {
     user-select: none;
     position: absolute;
+    background: #57a2f2;
+    font-size: 12px;
     top: -14px;
     left: 50%;
-    transform: translateX(-50%); 
-    background: #57a2f2;
     color: #ffffff;
     padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 12px;
     border: 1px solid #57a2f2;
-  }
-
-  /* Séparateur de lignes */
-  #middle .separator {
-    height: 1px;
-    background: #dddddd;
-    margin: 20px 0;
+    border-radius: 20px;
+    transform: translateX(-50%); 
   }
 
   /* Styles des prix */
@@ -166,6 +156,13 @@
     display: block;
     color: #aaa;
     font-size: 12px;
+  }
+
+  /* Séparateur de lignes */
+  #middle .separator {
+    height: 1px;
+    background: #dddddd;
+    margin: 20px 0;
   }
 
   /* Lignes de séparations */
@@ -196,44 +193,30 @@
     background: linear-gradient(170deg,#5587f3, #5990ef, #6883f1);
     font-family: 'Raleway-SemiBold';
     cursor: pointer;
-    border: 2px solid #3772d700;
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 20px 0 0;
     transition: 0.3s;
   }
   #middle button:hover {
-    background: #595bef;
-    border: 2px solid #494cd9;
-    box-shadow: 0 0 20px #5e48dccc;
-    color: #ffffff;
-    transition: 0.3s;
+    box-shadow: 0 0 20px #5990efcc;
   }
   #middle button:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
 
-  /* Bouton désativé */
-  #middle button:disabled {
-    background: linear-gradient(to right,#ff80bb66,#c680ff66);
-    box-shadow: none;
-    border: none;
-    cursor: not-allowed;
-  }
-  #middle button:active:disabled {
-    transform: none;
+  /* Bouton Advanced */
+  #middle .advanced button:hover {
+    background: linear-gradient(170deg,#80a8ff,#808dff, #a280ff);
+    box-shadow: 0 0 20px #808dffcc;
   }
 
-  /*
-  #middle .offer.best button {
-    box-shadow: 0 0 30px #57a2f2cc;
+  /* Bouton Premium */
+  #middle .premium button:hover {
+    background: linear-gradient(170deg,#ff80bb,#c680ff, #c680ff);
+    box-shadow: 0 0 20px #c680ffcc;
   }
-  #middle .offer.best button:hover {
-    background: #e96e6ecc;
-    box-shadow: 0 0 30px #e96e6ecc;
-    transform: scale(1.1);
-  }
-  */
 
   /* Barre de scroll */
   ::-webkit-scrollbar {
