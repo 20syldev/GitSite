@@ -214,7 +214,7 @@
 
   /* Bouton Premium */
   #middle .premium button:hover {
-    background: linear-gradient(170deg,#ff80bb,#c680ff, #c680ff);
+    background: linear-gradient(170deg,#ffaf80,#ff80bb, #c680ff);
     box-shadow: 0 0 20px #c680ffcc;
   }
 
