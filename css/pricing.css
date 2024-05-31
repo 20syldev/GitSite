@@ -64,6 +64,12 @@
     transform: translateX(-50%) translateY(-50%);
   }
 
+  /* Titre des offres */
+  #middle .offer h2 {
+    margin: -20px -20px 20px -20px;
+    padding: 20px 10px 0px 10px;
+  }
+
   /* Offres disponibles */
   #middle .offer {
     position: relative;
@@ -90,10 +96,25 @@
     box-shadow: 0 0 20px #57a2f2cc;
   }
 
-  /* Titre des offres */
-  #middle .offer h2 {
-    margin: -20px -20px 20px -20px;
-    padding: 20px 10px 0px 10px;
+  /* Lignes de séparations */
+  #middle .offer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  #middle .offer ul li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+  }
+  #middle .offer ul li:last-child {
+    border-bottom: none;
+  }
+  #middle .offer ul li .mark {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    padding-left: 10px;
   }
 
   /* Badge "recommandé" */
@@ -131,27 +152,6 @@
     height: 1px;
     background: #dddddd;
     margin: 20px 0;
-  }
-
-  /* Lignes de séparations */
-  #middle ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  #middle ul li {
-    display: flex;
-    padding: 10px 0;
-    border-bottom: 1px solid #dddddd;
-  }
-  #middle ul li:last-child {
-    border-bottom: none;
-  }
-  #middle ul li .mark {
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    padding-left: 10px;
   }
 
   /* Boutons de confirmation */
