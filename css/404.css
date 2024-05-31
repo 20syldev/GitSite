@@ -1,16 +1,6 @@
 /* CSS Desktop (404) */
 @media (min-width: 1080px) {
-  /* Importer les polices */
-  @font-face {
-    font-family: 'Raleway-Bold';
-    src: url('./Raleway-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Raleway-Regular';
-    src: url('./Raleway-Regular.ttf') format('truetype');
-  }
-  
+  /* Importer la police d'écriture */
   @font-face {
     font-family: 'Raleway-SemiBold';
     src: url('./Raleway-SemiBold.ttf') format('truetype');
@@ -53,17 +43,7 @@
 
 /* CSS Mobile (404) */
 @media (max-width: 1080px) {
-  /* Importer les polices */
-  @font-face {
-    font-family: 'Raleway-Bold';
-    src: url('./Raleway-Bold.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Raleway-Regular';
-    src: url('./Raleway-Regular.ttf') format('truetype');
-  }
-  
+  /* Importer la police d'écriture */
   @font-face {
     font-family: 'Raleway-SemiBold';
     src: url('./Raleway-SemiBold.ttf') format('truetype');
