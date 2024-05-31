@@ -96,6 +96,8 @@
   #middle h1 {
     text-align: center;
   }
+
+  /* Styles des paragraphes */
   #middle .paragraph {
     margin: 0 10% 5vw 10%;
     text-align: left;
@@ -115,6 +117,111 @@
   }
   #middle .center {
     text-align: center;
+  }
+
+  /* Liste des avantages */
+  #middle .avantages {
+    position: absolute;
+    display: flex;
+    padding: 2vw;
+    gap: 3vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #middle .avantages a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* Titre des offres */
+  #middle .offer h2 {
+    margin: -20px -20px 20px -20px;
+    padding: 20px 10px 0px 10px;
+  }
+  
+  /* Offres en bas */
+  #middle .offer {
+    position: relative;
+    background-color: #ededed;
+    box-shadow: 0 0 10px #cccccc;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
+    width: 23vw;
+    transition: 1s;
+  }
+  #middle .offer:hover {
+    box-shadow: 0 0 20px #cccccc;
+  }
+
+  /* Offre Advanced */
+  #middle .offer.advanced {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #57a2f2cc;
+    border: 0.5vh solid #57a2f2;
+  }
+  #middle .offer.advanced:hover {
+    box-shadow: 0 0 20px #57a2f2cc;
+  }
+  
+  /* Lignes de séparations */
+  #middle .offer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  #middle .offer ul li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+  }
+  #middle .offer ul li:last-child {
+    border-bottom: none;
+  }
+  #middle .offer ul li .mark {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    padding-left: 10px;
+  }
+
+  /* Badge "recommandé" */
+  #middle .badge {
+    user-select: none;
+    position: absolute;
+    background: #57a2f2;
+    font-size: 12px;
+    top: -14px;
+    left: 50%;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: 1px solid #57a2f2;
+    border-radius: 20px;
+    transform: translateX(-50%); 
+  }
+
+  /* Styles des prix */
+  #middle .price {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  #middle .price span {
+    font-size: 14px;
+  }
+  #middle .price small {
+    font-family: 'Raleway-Regular';
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  /* Séparateur de lignes */
+  #middle .separator {
+    height: 1px;
+    background: #dddddd;
+    margin: 20px 0;
   }
 
   /* Barre de scroll */
