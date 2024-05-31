@@ -93,13 +93,28 @@
   }
 
   /* Milieu de la page */
-  #middle {
+  #middle h1 {
     text-align: center;
   }
   #middle .paragraph {
-    margin: 0 10% 3vw 10%;
+    margin: 0 10% 5vw 10%;
     text-align: left;
     overflow: hidden;
+  }
+  #middle .paragraph li {
+    margin-top: 3vh;
+  }
+  #middle .paragraph .step {
+    margin-bottom: 5vh;
+  }
+  #middle .paragraph a {
+    color: #000000;
+  }
+  #middle .paragraph a:hover {
+    color: #222222;
+  }
+  #middle .center {
+    text-align: center;
   }
 
   /* Barre de scroll */
