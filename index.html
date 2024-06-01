@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitSite - Accueil</title>
     <!-- Liens vers le CSS et l'icône -->
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="icon" href="images/gitsite.png"/>
   </head>
   <body>
@@ -17,17 +17,158 @@
       </span>
 
       <span class="links">
-        <a href="https://github.com/20syldev/gitsite"><img class="icons" src="images/github.png"/></a>
-        <a href="https://github.com/sponsors/20syldev"><img id="sponsor" src="images/sponsor.png"/></a>
+        <a href="https://github.com/20syldev/gitsite" target="_blank"><img class="icons" src="images/github.png"/></a>
+        <a href="https://github.com/sponsors/20syldev" target="_blank"><img id="sponsor" src="images/sponsor.png"/></a>
       </span>
     </div>
      
     <!-- Milieu de la page -->
-    <div style="position: absolute; font-size: 7vh; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
-      Page en cours de création
+    <div id="middle">
+      <!-- 1er paragraphe -->
+      <h1>Qu'est ce que GitSite ?</h1>
+      <div class="paragraph">
+        GitSite est une plateforme d'hébergement web abordable qui se distingue par ses <u>tarifs très compétitifs</u>.
+        Conçu pour aider les personnes ne sachant pas comment héberger un site, GitSite offre une solution <u>simple et efficace</u> pour mettre en ligne <u>votre site web</u> facilement.
+        
+        <br><br>
+
+        En utilisant GitSite, vous pouvez héberger votre site directement sur un sous-domaine personnalisé, tel que <u>gitsite.dev/votre-nom</u>, ce qui vous permet de bénéficier d'une <u>adresse web professionnelle</u> et facilement mémorisable.
+        
+        <br><br>
+
+        En plus de son accessibilité financière, GitSite <u>garantit un service de qualité</u> et un site en ligne 24h/24 et 7j/7.
+        Que vous souhaitiez héberger un blog personnel, un portfolio ou un site pour votre petite entreprise, GitSite vous propose plusieurs offres avec des <a href="#avantages">avantages différents</a>.
+      </div>
+
+      <!-- 2ème paragraphe -->
+      <h1>Comment héberger mon site ?</h1>
+      <div class="paragraph"> 
+        <!-- Étape 1 -->
+        <div class="step">
+          <h2>1. Créer un Fork du Dépôt</h2>
+          <ul>
+            <li>Accédez au dépôt GitHub de GitSite ici : <a href="https://github.com/20syldev/gitsite" target="_blank">20syldev/gitsite</a>.</li>
+            <li>Forker le dépôt : Cliquez sur le bouton "Fork" en haut à droite de la page du dépôt. Cela créera une copie du dépôt sous votre propre compte GitHub.</li>
+          </ul>
+        </div>
+        
+        <!-- Étape 2 -->
+        <div class="step">
+          <h2>2. Modifier vos fichiers</h2>
+          <ul>
+            <li>Si votre abonnement vous permet de stocker votre site sur l'URL gitsite.dev/votre-nom :</li>
+            <ul>
+              <li>Ajouter ou modifier vos fichiers : Cliquez sur "Add File", en étant dans la <a href="https://github.com/20syldev/gitsite/tree/main" target="_blank">branche de base</a> puis vous aurez deux options :</li>
+              <ul>
+                <li>Soit "Create a new file" pour commencer à écrire un fichier de zéro (ou coller son propre code).</li>
+                <li>Soit "Upload files" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.</li>
+              </ul>
+              <li>Passez ensuite à l'étape suivante.</li>
+            </ul>
+
+            <br>
+            
+            <li>Sinon, si votre abonnement vous permet de stocker votre site sur l'URL gitsite.dev/u/votre-nom :</li>
+            <ul>
+              <li>Ajouter ou modifier vos fichiers : Cliquez sur "Add File", en étant dans la <a href="https://github.com/20syldev/gitsite/tree/main/u" target="_blank">page du dossier</a> /u/ puis vous aurez deux options :</li>
+              <ul>
+                <li>Soit "Create a new file" pour commencer à écrire un fichier de zéro (ou coller son propre code).</li>
+                <li>Soit "Upload files" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.</li>
+              </ul>
+              <li>Passez ensuite à l'étape suivante.</li>
+            </ul>
+          </ul>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="step">
+          <h2>3. Pousser les modifications et créer une Pull Request</h2>
+          <ul>
+            <li>Envoyez les modifications vers votre Fork : cliquez sur "Commit changes..."</li>
+            <li>Créer une pull request :</li>
+              <ul>
+                <li>Rendez-vous sur la page de votre dépôt forké sur GitHub.</li>
+                <li>Cliquez sur le bouton "Compare & pull request".</li>
+                <li>Assurez-vous que la branche de base <i>(base branch)</i> est <u>20syldev/gitsite</u> et que la branche de comparaison <i>(compare branch)</i> est celle où vous avez fait vos modifications.</li>
+                <li>Ajoutez un titre et une description à votre pull request, puis cliquez sur "Create pull request".</li>
+              </ul>
+          </ul>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="step">
+          <h2>4. Révision et acceptation de la Pull Request</h2>
+          En tant que propriétaires du dépôt original, nous recevrons une <u>notification</u> de la pull request, et nous commencerons alors la <u>révision</u>.
+          
+          <br><br>
+          
+          Avec les modifications proposées, s'il y a un problème, nous pourrons <u>commenter</u>, demander des <u>modifications</u> supplémentaires ou <u>approuver</u> la pull request.
+        </div>
+
+        <!-- Étape 5 -->
+        <h2><u>Conditions de Validation</u></h2>
+        Pour s'assurer qu'une pull request soit acceptée, vous devez :
+        <ul>
+          <li>Avoir respecté le délai d'attente entre deux envois de modifications.</li>
+          <li>Vérifier que vous avez le droit d'ajouter du script avec votre abonnement.</li>
+          <li>Vérifiez que vous n'avez pas modifié autre chose que le code ou le fichier de votre site.</li>
+          <li>Être sûr d'avoir terminé vos modifications pour les prochains jours, pour éviter les requêtes répétitives.</li>
+        </ul>
+      </div>
+
+      <!-- 3ème paragraphe -->
+      <h1 id="avantages">Quels sont les avantages de chaque offre ?</h1>
+      <div class="avantages">
+        <a href="/pricing">
+          <div class="offer standard">
+            <h2>Standard</h2>
+            <div class="separator"></div>
+            <div class="price">0.49<span>€ EUR</span> <small>par utilisateur/mois</small></div>
+            <div class="separator"></div>
+            <ul>
+              <li>Domaine gitsite.dev/u/&lt;user&gt;<img class="mark" src="images/check.png"></img></li>
+              <li>1 page de contenu<img class="mark" src="images/check.png"></img></li>
+              <li>Utilisation de Javascript<img class="mark" src="images/cross.png"></img></li>
+              <li>Arborescence des fichiers<img class="mark" src="images/cross.png"></img></li>
+            </ul>
+          </div>
+        </a>
+        <a href="/pricing">
+          <div class="offer advanced">
+            <div class="badge">Recommandé</div>
+            <h2>Advanced</h2>
+            <div class="separator"></div>
+            <div class="price">0.99<span>€ EUR</span> <small>par utilisateur/mois</small></div>
+            <div class="separator"></div>
+            <ul>
+              <li>Domaine gitsite.dev/u/&lt;user&gt;<img class="mark" src="images/check.png"></img></li>
+              <li>2 pages de contenu<img class="mark" src="images/check.png"></img></li>
+              <li>Utilisation de Javascript<img class="mark" src="images/check.png"></img></li>
+              <li>Arborescence des fichiers<img class="mark" src="images/check.png"></img></li>
+              <li>Mise à jour garantie sous 48h<img class="mark" src="images/check.png"></img></li>
+            </ul>
+          </div>
+        </a>
+        <a href="/pricing">
+          <div class="offer premium">
+            <h2>Premium</h2>
+            <div class="separator"></div>
+            <div class="price">1.79<span>€ EUR</span> <small>par utilisateur/mois</small></div>
+            <div class="separator"></div>
+            <ul>
+              <li>Domaine gitsite.dev/&lt;user&gt;<img class="mark" src="images/goldcheck.png"></img></li>
+              <li>Nombre de pages illimité<img class="mark" src="images/goldcheck.png"></img></li>
+              <li>Utilisation de Javascript<img class="mark" src="images/check.png"></img></li>
+              <li>Arborescence des fichiers<img class="mark" src="images/check.png"></img></li>
+              <li>Mise à jour garantie sous 24h<img class="mark" src="images/goldcheck.png"></img></li>
+              <li>Customisation des noms de fichier<img class="mark" src="images/check.png"></img></li>
+          </ul>
+          </div>
+        </a>
+      </div>
     </div>
     
     <!-- Charger le Js -->
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
