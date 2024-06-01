@@ -84,6 +84,7 @@
   }
   #middle .offer:hover {
     box-shadow: 0 0 20px #cccccc;
+    transform: scale(1.05);
   }
 
   /* Offre Advanced */
