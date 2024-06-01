@@ -131,6 +131,10 @@
   #middle .avantages a {
     color: #000000;
     text-decoration: none;
+    transition: 1s;
+  }
+  #middle .avantages a:hover {
+    transform: scale(1.05);
   }
 
   /* Titre des offres */
