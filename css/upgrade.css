@@ -94,11 +94,11 @@
   #middle .upgrade ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 3vh 0;
   }
   #middle .upgrade ul li {
     display: flex;
-    padding: 10px 0;
+    padding: 1.5vh 0;
     border-bottom: 1px solid #dddddd;
   }
   #middle .upgrade ul li:last-child {
