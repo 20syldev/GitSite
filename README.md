@@ -19,28 +19,28 @@ En plus de son accessibilité financière, GitSite **garantit un service de qual
 
 ### 1. Créer un Fork du Dépôt
 - Accédez au dépôt GitHub de GitSite ici : [20syldev/gitsite](https://github.com/20syldev/gitsite).
-- Forker le dépôt : Cliquez sur le bouton "Fork" en haut à droite de la page du dépôt. Cela créera une copie du dépôt sous votre propre compte GitHub.
+- Forker le dépôt : Cliquez sur le bouton "**Fork**" en haut à droite de la page du dépôt. Cela créera une copie du dépôt sous votre propre compte GitHub.
 
 ### 2. Modifier vos fichiers
 - Si votre abonnement vous permet de stocker votre site sur l'URL gitsite.dev/votre-nom :
-  - Ajouter ou modifier vos fichiers : Cliquez sur "Add File", en étant dans la [branche de base](https://github.com/20syldev/gitsite/tree/main) puis vous aurez deux options :
-    - Soit "Create a new file" pour commencer à écrire un fichier de zéro (ou coller son propre code).
-    - Soit "Upload files" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.
+  - Ajouter ou modifier vos fichiers : Cliquez sur "**Add File**", en étant dans la [branche de base](https://github.com/20syldev/gitsite/tree/main) puis vous aurez deux options :
+    - Soit "**Create a new file**" pour commencer à écrire un fichier de zéro (ou coller son propre code).
+    - Soit "**Upload files**" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.
   - Passez ensuite à l'étape suivante.
 
 - Sinon, si votre abonnement vous permet de stocker votre site sur l'URL gitsite.dev/u/votre-nom :
-  - Ajouter ou modifier vos fichiers : Cliquez sur "Add File", en étant dans la [page du dossier](https://github.com/20syldev/gitsite/tree/main/u) /u/ puis vous aurez deux options :
-    - Soit "Create a new file" pour commencer à écrire un fichier de zéro (ou coller son propre code).
-    - Soit "Upload files" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.
+  - Ajouter ou modifier vos fichiers : Cliquez sur "**Add File**", en étant dans la [page du dossier](https://github.com/20syldev/gitsite/tree/main/u) /u/ puis vous aurez deux options :
+    - Soit "**Create a new file**" pour commencer à écrire un fichier de zéro (ou coller son propre code).
+    - Soit "**Upload files**" pour ajouter directemement votre/vos fichier(s) ou dossier(s) depuis votre appareil.
   - Passez ensuite à l'étape suivante.
 
 ### 3. Pousser les modifications et créer une Pull Request
-- Envoyez les modifications vers votre Fork : cliquez sur "Commit changes..."
+- Envoyez les modifications vers votre Fork : cliquez sur "**Commit changes...**"
 - Créer une pull request :
   - Rendez-vous sur la page de votre dépôt forké sur [GitHub](https://github.com).
-  - Cliquez sur le bouton "Compare & pull request".
+  - Cliquez sur le bouton "**Compare & pull request**".
   - Assurez-vous que la branche de base *(base branch)* est **20syldev/gitsite** et que la branche de comparaison *(compare branch)* est celle où vous avez fait vos modifications.
-  - Ajoutez un titre et une description à votre pull request, puis cliquez sur "Create pull request".
+  - Ajoutez un titre et une description à votre pull request, puis cliquez sur "**Create pull request**".
 
 ### 4. Révision et acceptation de la Pull Request
 En tant que propriétaires du dépôt original, nous recevrons une **notification** de la pull request, et nous commencerons alors la **révision**.  
