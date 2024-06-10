@@ -152,7 +152,7 @@
   #middle button {
     user-select: none;
     color: #ffffff;
-    background: linear-gradient(170deg,#5587f3, #5990ef, #6883f1);
+    background: linear-gradient(170deg, #5587f3, #5990ef, #6883f1);
     font-family: 'Raleway-SemiBold';
     cursor: pointer;
     border: none;
@@ -170,13 +170,13 @@
 
   /* Bouton Advanced */
   #middle .advanced button:hover {
-    background: linear-gradient(170deg,#80a8ff,#808dff, #a280ff);
+    background: linear-gradient(170deg, #80a8ff,#808dff, #a280ff);
     box-shadow: 0 0 20px #808dffcc;
   }
 
   /* Bouton Premium */
   #middle .premium button:hover {
-    background: linear-gradient(170deg,#ffaf80,#ff80bb, #c680ff);
+    background: linear-gradient(170deg, #ffaf80,#ff80bb, #c680ff);
     box-shadow: 0 0 20px #ff80bbcc;
   }
 }
