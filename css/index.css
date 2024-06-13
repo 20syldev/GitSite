@@ -20,10 +20,6 @@
   }
 
   /* Haut de la page */
-  #top {
-    background: #ffffff;
-  }
-
   #top .title {
     user-select: none;
     position: relative;
@@ -156,11 +152,11 @@
   /* Offre Advanced */
   #middle .offer.advanced {
     background-color: #ffffff;
-    box-shadow: 0 0 10px #57a2f2cc;
-    border: 0.5vh solid #57a2f2;
+    box-shadow: 0 0 10px #5587f3cc;
+    border: 0.5vh solid #5587f3;
   }
   #middle .offer.advanced:hover {
-    box-shadow: 0 0 20px #57a2f2cc;
+    box-shadow: 0 0 20px #5587f3cc;
   }
   
   /* Lignes de séparations */
@@ -188,13 +184,13 @@
   #middle .badge {
     user-select: none;
     position: absolute;
-    background: #57a2f2;
+    background: #5587f3;
     font-size: 12px;
     top: -14px;
     left: 50%;
     color: #ffffff;
     padding: 5px 15px;
-    border: 1px solid #57a2f2;
+    border: 1px solid #5587f3;
     border-radius: 20px;
     transform: translateX(-50%); 
   }
