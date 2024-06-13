@@ -83,11 +83,11 @@
   /* Offre Advanced */
   #middle .offer.advanced {
     background-color: #ffffff;
-    box-shadow: 0 0 10px #57a2f2cc;
-    border: 0.5vh solid #57a2f2;
+    box-shadow: 0 0 10px #5587f3cc;
+    border: 0.5vh solid #5587f3;
   }
   #middle .offer.advanced:hover {
-    box-shadow: 0 0 20px #57a2f2cc;
+    box-shadow: 0 0 20px #5587f3cc;
   }
 
   /* Lignes de séparations */
@@ -115,13 +115,13 @@
   #middle .badge {
     user-select: none;
     position: absolute;
-    background: #57a2f2;
+    background: #5587f3;
     font-size: 12px;
     top: -14px;
     left: 50%;
     color: #ffffff;
     padding: 5px 15px;
-    border: 1px solid #57a2f2;
+    border: 1px solid #5587f3;
     border-radius: 20px;
     transform: translateX(-50%); 
   }
@@ -178,6 +178,58 @@
   #middle .premium button:hover {
     background: linear-gradient(170deg, #ffaf80,#ff80bb, #c680ff);
     box-shadow: 0 0 20px #ff80bbcc;
+  }
+
+  /* Bas de la page */
+  #bottom .button {
+    position: absolute;
+    background: #5587f3;
+    color: white;
+    font-family: 'Raleway-SemiBold';
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 2.6em;
+    right: 2%;
+    bottom: 4%;
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    padding-right: 2.8em;
+  }
+  
+  #bottom .button .icon {
+    position: absolute;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8em;
+    width: 1.8em;
+    right: 0.3em;
+    border-radius: 0.6em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #5587f3cc;
+    transition: 0.3s;
+  }
+  #bottom .button .icon svg {
+    color: #4673d3;
+    width: 1em;
+    transition: 0.5s;
+  }
+  
+  #bottom .button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  #bottom .button:hover .icon svg {
+    transform: translateX(0.5em) rotate(-45deg);
+    transition: 0.5s;
+  }
+  
+  #bottom .button:active .icon {
+    transform: scale(0.95);
   }
 }
 
