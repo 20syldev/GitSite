@@ -182,8 +182,8 @@
 
   /* Bouton Pro */
   #middle .pro button:hover {
-    background: linear-gradient(170deg, #dcb58a, #d2a855, #cf9133);
-    box-shadow: 0 0 20px #cfb14dcc;
+    background: linear-gradient(170deg, #5e5dcc, #7c80dd, #778cde);
+    box-shadow: 0 0 20px #7c80ddcc;
   }
 }
 
