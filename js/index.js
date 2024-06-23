@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sponsorImage.addEventListener('mouseover', function() {
         this.classList.add('hover');
         setTimeout(() => {
-            this.src = 'images/sponsor-fill.png';
+            this.src = 'https://gitsite.dev/images/sponsor-fill.png';
             this.classList.remove('hover');
         }, 250);
     });
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     sponsorImage.addEventListener('mouseout', function() {
         this.classList.add('hover');
         setTimeout(() => {
-            this.src = 'images/sponsor.png';
+            this.src = 'https://gitsite.dev/images/sponsor.png';
             this.classList.remove('hover');
         }, 250);
     });
