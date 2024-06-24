@@ -2,7 +2,7 @@
   <a href="https://gitsite.dev"><img src="https://gitsite.dev/images/gitsite.png" alt="Logo" width="25%" height="auto"></a>
 
 # GitSite - Open-Source hosting site
-  [![Version](https://custom-icon-badges.demolab.com/badge/Site%20:-v0.9.0-ff6666?logo=gitsite&labelColor=23272A)](https://github.com/20syldev/gitsite/releases/latest)
+  [![Version](https://custom-icon-badges.demolab.com/badge/Site%20:-v1.0.0-ff6666?logo=gitsite&labelColor=23272A)](https://github.com/20syldev/gitsite/releases/latest)
   [![Lang](https://img.shields.io/badge/Lang%20:-EN-ff6666?labelColor=23272A)](https://github.com/20syldev/gitsite#readme)
 </div>
 
