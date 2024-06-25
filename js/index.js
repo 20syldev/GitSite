@@ -17,4 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
             this.classList.remove('hover');
         }, 250);
     });
+
+    // Redirection vers la page de la langue de l'utilisateur
+    var manual = document.cookie.split('; ').find(row => row.startsWith('user_language_preference='))?.split('=')[1];
+
+    if (!manual) {
+        var FullUserLang = navigator.language || navigator.userLanguage;
+        var userLang = FullUserLang.slice(0, 2);
+
+        if (userLang === "en") {
+            window.location.replace("https://en.gitsite.dev");
+        } else {
+            window.location.replace("https://gitsite.dev");
+        }
+    }
 });
