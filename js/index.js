@@ -26,9 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var userLang = FullUserLang.slice(0, 2);
 
         if (userLang === "en") {
-            window.location.replace("https://en.gitsite.dev");
+            if (window.location.href !== "https://en.gitsite.dev") {
+                window.location.replace("https://en.gitsite.dev");
+            }
         } else {
-            window.location.replace("https://gitsite.dev");
+            if (window.location.href !== "https://gitsite.dev") {
+                window.location.replace("https://gitsite.dev");
+            }
         }
     }
 });
