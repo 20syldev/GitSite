@@ -10,6 +10,10 @@
     font-family: 'Raleway-SemiBold';
     src: url('./Raleway-SemiBold.ttf') format('truetype');
   }
+
+  * {
+    scroll-behavior: smooth;
+  }
   
   body {
     font-family: 'Raleway-SemiBold';
