@@ -1,337 +1,240 @@
-/* CSS Desktop (Index) */
-@media only screen and (min-width: 1080px) {
-  /* Importer les polices */
-  @font-face {
-    font-family: 'Raleway-Regular';
-    src: url('./Raleway-Regular.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url('./Raleway-SemiBold.ttf') format('truetype');
-  }
-
-  * {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Raleway-SemiBold';
-    background-color: #ffffff;
-    color: #000000;
-    margin-left: 2%;
-    margin-top: 3%;
-  }
-
-  /* Haut de la page */
-  #top .title {
-    user-select: none;
-    position: relative;
-    color: #000000;
-    font-size: 2vw;
-    z-index: 9999;
-  }
-  #top .title img {
-    width: 1.5vw;
-    height: auto;
-    margin-right: 1vh;
-    transition: 0.5s;
-  }
-  #top .title img:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
-  #top .title a {
-    text-decoration: none;
-    color: #000000;
-  }
-  #top .title a:hover {
-    text-decoration: underline;
-  }
-
-  /* Placement des icônes */
-  #top .links {
-    user-select: none;
-    position: absolute;
-    margin-left: 1vw;
-    right: 2%;
-    z-index: 9999;
-  }
-  #top .links .icons {
-    width: 1.5vw;
-    height: auto;
-    margin-left: 2vw;
-    margin-right: 1vh;
-    transition: 0.5s;
-  }
-  #top .links .icons:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
-
-  /* CSS pour le bouton sponsor */
-  #top .links #sponsor {
-    width: 1.5vw;
-    height: auto;
-    margin-left: 2vw;
-    filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(260deg) brightness(100%) contrast(100%);
-    transition: opacity 0.5s ease;
-    z-index: 9999;
-  }
-  #top .links #sponsor.hover {
-    opacity: 0;
-  }
-  #top .links #sponsor:hover {
-    animation: pop 0.5s ease;
-  }
-
-  /* Milieu de la page */
-  #middle h1 {
-    text-align: center;
-  }
-
-  /* Styles des paragraphes */
-  #middle .paragraph {
-    margin: 0 10% 5vw 10%;
-    text-align: left;
-    overflow: hidden;
-  }
-  #middle .paragraph li {
-    margin-top: 2vh;
-  }
-  #middle .paragraph .step {
-    margin-bottom: 5vh;
-  }
-  #middle .paragraph a {
-    color: #000000;
-  }
-  #middle .paragraph a:hover {
-    color: #222222;
-  }
-  #middle .center {
-    text-align: center;
-  }
-
-  /* Liste des avantages */
-  #middle .avantages {
-    position: absolute;
-    display: flex;
-    padding: 2vw;
-    gap: 3vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  #middle .avantages a {
-    color: #000000;
-    text-decoration: none;
-    transition: 1s;
-  }
-  #middle .avantages a:hover {
-    transform: scale(1.05);
-  }
-
-  /* Titre des offres */
-  #middle .offer h2 {
-    margin: -20px -20px 20px -20px;
-    padding: 20px 10px 0px 10px;
-  }
-  
-  /* Offres en bas */
-  #middle .offer {
-    position: relative;
-    background-color: #ededed;
-    box-shadow: 0 0 10px #cccccc;
-    border: 2px solid #ebebeb;
-    border-radius: 10px;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 10px;
-    width: 23vw;
-    transition: 1s;
-  }
-  #middle .offer:hover {
-    box-shadow: 0 0 20px #cccccc;
-  }
-
-  /* Offre Advanced */
-  #middle .offer.advanced {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #5587f3cc;
-    border: 0.5vh solid #5587f3;
-  }
-  #middle .offer.advanced:hover {
-    box-shadow: 0 0 20px #5587f3cc;
-  }
-  
-  /* Lignes de séparations */
-  #middle .offer ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  #middle .offer ul li {
-    display: flex;
-    padding: 10px 0;
-    border-bottom: 1px solid #dddddd;
-  }
-  #middle .offer ul li:last-child {
-    border-bottom: none;
-  }
-  #middle .offer ul li .mark {
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    padding-left: 10px;
-  }
-
-  /* Badge "recommandé" */
-  #middle .badge {
-    user-select: none;
-    position: absolute;
-    background: #5587f3;
-    font-size: 12px;
-    top: -14px;
-    left: 50%;
-    color: #ffffff;
-    padding: 5px 15px;
-    border: 1px solid #5587f3;
-    border-radius: 20px;
-    transform: translateX(-50%); 
-  }
-
-  /* Styles des prix */
-  #middle .price {
-    font-size: 24px;
-    margin: 20px 0;
-  }
-  #middle .price span {
-    font-size: 14px;
-  }
-  #middle .price small {
-    font-family: 'Raleway-Regular';
-    display: block;
-    color: #aaa;
-    font-size: 12px;
-  }
-
-  /* Séparateur de lignes */
-  #middle .separator {
-    height: 1px;
-    background: #dddddd;
-    margin: 20px 0;
-  }
-
-  /* Barre de scroll */
-  ::-webkit-scrollbar {
-    height: 1vh;
-    width: 0.5vw;
-    background-color: #ffffff;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-    padding: 10px 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #dddddd;
-    border-radius: 10vw;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #cccccc;
-  }
+/* Importer les polices */
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('./Raleway-Regular.ttf') format('truetype');
 }
 
-/* CSS Mobile (Index) */
-@media only screen and (max-width: 1080px) {
-  /* Importer les polices */
-  @font-face {
-    font-family: 'Raleway-Regular';
-    src: url('./Raleway-Regular.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url('./Raleway-SemiBold.ttf') format('truetype');
-  }
-  
-  body {
-    font-family: 'Raleway-SemiBold';
-    background-color: #ffffff;
-    color: #000000;
-    overflow: hidden;
-    margin-top: 5%;
-  }
-  /* Haut de la page */
-  #top .title {
-    user-select: none;
-    position: relative;
-    color: #ffffff;
-    font-size: 1.8vh;
-    text-align: center;
-    margin-left: 2%;
-  }
-  #top .title img {
-    width: 1.5vh;
-    height: auto;
-    margin-right: 1vw;
-    transition: 0.5s;
-  }
-  #top .title a {
-    text-decoration: none;
-    color: #ffffff;
-  }
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('./Raleway-SemiBold.ttf') format('truetype');
+}
 
-  /* Placement des icônes */
-  #top .links {
-    user-select: none;
-    position: absolute;
-    margin-left: 1vh;
-    margin-right: 2%;
-  }
-  #top .links .icons {
-    width: 1.5vh;
-    height: auto;
-    margin-left: 2vh;
-    margin-right: 1vh;
-    transition: 0.5s;
-  }
+* {
+  scroll-behavior: smooth;
+}
 
-  /* CSS pour le bouton sponsor */
-  #top .links #sponsor {
-    width: 1.5vh;
-    height: auto;
-    margin-left: 2vh;
-    filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(284deg) brightness(100%) contrast(87%);
-    transition: opacity 0.5s ease;
-  }
+body {
+  font-family: 'Raleway-SemiBold';
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 2%;
+  margin-top: 3%;
+}
 
-  /* Milieu de la page */
-  #middle {
-    user-select: none;
-    color: #ffffff;
-    font-size: 3vh;
-    text-align: center;
-    margin-top: 30vh;
-  }
+/* Haut de la page */
+#top .title {
+  user-select: none;
+  position: relative;
+  color: #000000;
+  font-size: 2vw;
+  z-index: 9999;
+}
+#top .title img {
+  width: 1.5vw;
+  height: auto;
+  margin-right: 1vh;
+  transition: 0.5s;
+}
+#top .title img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+#top .title a {
+  text-decoration: none;
+  color: #000000;
+}
+#top .title a:hover {
+  text-decoration: underline;
+}
 
-  /* Barre de scroll */
-  ::-webkit-scrollbar {
-    height: 1vh;
-    width: 0.5vw;
-    background-color: #ffffff;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-    padding: 10px 10px;
-  }
+/* Placement des icônes */
+#top .links {
+  user-select: none;
+  position: absolute;
+  margin-left: 1vw;
+  right: 2%;
+  z-index: 9999;
+}
+#top .links .icons {
+  width: 1.5vw;
+  height: auto;
+  margin-left: 2vw;
+  margin-right: 1vh;
+  transition: 0.5s;
+}
+#top .links .icons:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background-color: #dddddd;
-    border-radius: 10vw;
-  }
+/* CSS pour le bouton sponsor */
+#top .links #sponsor {
+  width: 1.5vw;
+  height: auto;
+  margin-left: 2vw;
+  filter: invert(50%) sepia(73%) saturate(663%) hue-rotate(260deg) brightness(100%) contrast(100%);
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+#top .links #sponsor.hover {
+  opacity: 0;
+}
+#top .links #sponsor:hover {
+  animation: pop 0.5s ease;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #cccccc;
-  }
+/* Milieu de la page */
+#middle h1 {
+  text-align: center;
+}
+
+/* Styles des paragraphes */
+#middle .paragraph {
+  margin: 0 10% 5vw 10%;
+  text-align: left;
+  overflow: hidden;
+}
+#middle .paragraph li {
+  margin-top: 2vh;
+}
+#middle .paragraph .step {
+  margin-bottom: 5vh;
+}
+#middle .paragraph a {
+  color: #000000;
+}
+#middle .paragraph a:hover {
+  color: #222222;
+}
+#middle .center {
+  text-align: center;
+}
+
+/* Liste des avantages */
+#middle .avantages {
+  position: absolute;
+  display: flex;
+  padding: 2vw;
+  gap: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#middle .avantages a {
+  color: #000000;
+  text-decoration: none;
+  transition: 1s;
+}
+#middle .avantages a:hover {
+  transform: scale(1.05);
+}
+
+/* Titre des offres */
+#middle .offer h2 {
+  margin: -20px -20px 20px -20px;
+  padding: 20px 10px 0px 10px;
+}
+
+/* Offres en bas */
+#middle .offer {
+  position: relative;
+  background-color: #ededed;
+  box-shadow: 0 0 10px #cccccc;
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 10px;
+  width: 23vw;
+  transition: 1s;
+}
+#middle .offer:hover {
+  box-shadow: 0 0 20px #cccccc;
+}
+
+/* Offre Advanced */
+#middle .offer.advanced {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #5587f3cc;
+  border: 0.5vh solid #5587f3;
+}
+#middle .offer.advanced:hover {
+  box-shadow: 0 0 20px #5587f3cc;
+}
+
+/* Lignes de séparations */
+#middle .offer ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+#middle .offer ul li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+#middle .offer ul li:last-child {
+  border-bottom: none;
+}
+#middle .offer ul li .mark {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+/* Badge "recommandé" */
+#middle .badge {
+  user-select: none;
+  position: absolute;
+  background: #5587f3;
+  font-size: 12px;
+  top: -14px;
+  left: 50%;
+  color: #ffffff;
+  padding: 5px 15px;
+  border: 1px solid #5587f3;
+  border-radius: 20px;
+  transform: translateX(-50%); 
+}
+
+/* Styles des prix */
+#middle .price {
+  font-size: 24px;
+  margin: 20px 0;
+}
+#middle .price span {
+  font-size: 14px;
+}
+#middle .price small {
+  font-family: 'Raleway-Regular';
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* Séparateur de lignes */
+#middle .separator {
+  height: 1px;
+  background: #dddddd;
+  margin: 20px 0;
+}
+
+/* Barre de scroll */
+::-webkit-scrollbar {
+  height: 1vh;
+  width: 0.5vw;
+  background-color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 10px 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  border-radius: 10vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
 }
