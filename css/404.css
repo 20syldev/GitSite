@@ -1,81 +1,39 @@
-/* CSS Desktop (404) */
-@media (min-width: 1080px) {
-  /* Importer la police d'écriture */
-  @font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url('./Raleway-SemiBold.ttf') format('truetype');
-  }
-
-  body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'Raleway-SemiBold';
-    margin-left: 2%;
-    overflow: hidden;
-  }
-
-  /* Texte en haut de la page */
-  #top {
-    margin-top: 30vh;
-    font-size: 2vw;
-    line-height: 5vh;
-    text-align: center;
-  }
-
-  /* Texte au centre de la page */
-  #middle {
-    margin-top: 20vh;
-    font-size: 3vw;
-    text-align: center;
-  }
-
-  /* Lien de la page & Animation */
-  #link {
-    color: #ff4444;
-    text-decoration: none transparent;
-  }
-  #link:hover {
-    color: #ce3131;
-    text-decoration: underline;
-    transition: text-decoration 1s ease;
-  }
+/* Importer la police d'écriture */
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('./Raleway-SemiBold.ttf') format('truetype');
 }
 
-/* CSS Mobile (404) */
-@media (max-width: 1080px) {
-  /* Importer la police d'écriture */
-  @font-face {
-    font-family: 'Raleway-SemiBold';
-    src: url('./Raleway-SemiBold.ttf') format('truetype');
-  }
-  
-  body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'Raleway-SemiBold';
-    overflow: hidden;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-  
-  /* Texte en haut de la page */
-  #top {
-    margin-top: 20vh;
-    font-size: 6vw;
-    line-height: 4vh;
-    text-align: center;
-  }
-  
-  /* Texte au centre de la page */
-  #middle {
-    margin-top: 20vh;
-    font-size: 8vw;
-    text-align: center;
-  }
-  
-  /* Lien de la page & Animation */
-  #link {
-    color: #ff4444;
-    text-decoration: none transparent;
-  }
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Raleway-SemiBold';
+  margin-left: 2%;
+  overflow: hidden;
+}
+
+/* Texte en haut de la page */
+#top {
+  margin-top: 30vh;
+  font-size: 2vw;
+  line-height: 5vh;
+  text-align: center;
+}
+
+/* Texte au centre de la page */
+#middle {
+  margin-top: 20vh;
+  font-size: 3vw;
+  text-align: center;
+}
+
+/* Lien de la page & Animation */
+#link {
+  color: #ff4444;
+  text-decoration: none transparent;
+}
+#link:hover {
+  color: #ce3131;
+  text-decoration: underline;
+  transition: text-decoration 1s ease;
 }
